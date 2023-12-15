@@ -1,0 +1,7 @@
+set dynamic route  /asf/:id
+set outlet and set path
+use params to get the id in category page
+set another parent path for newslayout and make children layout according to it 
+**************************
+now  work in express js  
+firat load three typee of data 
