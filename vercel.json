@@ -1,15 +1,19 @@
-{
+
+
+
+  {
     "version": 2,
-    "builds": [
-      {
-        "src": "index.js",
-        "use": "@now/node"
-      }
-    ],
     "routes": [
       {
+        "handle": "src/index.js",  
         "src": "/(.*)",
-        "dest": "index.js"
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+          "Access-Control-Allow-Headers": "Content-Type"
+        },
+        "continue": true
       }
     ]
   }
+  
