@@ -1,17 +1,15 @@
-
-
-
-  {
+{
     "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@now/node"
+      }
+    ],
     "routes": [
       {
-        "src": "/categories/(.*)",
-        "dest": "/index.js"
-      },
-      {
         "src": "/(.*)",
-        "dest": "/index.js"
+        "dest": "index.js"
       }
     ]
   }
-  
