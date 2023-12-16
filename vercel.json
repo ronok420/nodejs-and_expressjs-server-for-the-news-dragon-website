@@ -5,14 +5,12 @@
     "version": 2,
     "routes": [
       {
-        "handle": "src/index.js",  
+        "src": "/categories/(.*)",
+        "dest": "/index.js"
+      },
+      {
         "src": "/(.*)",
-        "headers": {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-          "Access-Control-Allow-Headers": "Content-Type"
-        },
-        "continue": true
+        "dest": "/index.js"
       }
     ]
   }
